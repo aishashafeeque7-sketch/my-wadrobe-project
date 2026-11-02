@@ -1,0 +1,395 @@
+/* ---------- Basic reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fdf6f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border-bottom: 2px solid #f3d3e0;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d6336c;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-links a {
+  color: #555;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #d6336c;
+}
+
+.navbar-username {
+  color: #999;
+  font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #d6336c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b8265a;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #d6336c;
+  border: 2px solid #d6336c;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-danger {
+  background-color: #fbeaea;
+  color: #c0392b;
+}
+
+/* ---------- Auth pages (Login/Signup) ---------- */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+  color: #d6336c;
+  margin-bottom: 5px;
+}
+
+.auth-subtitle {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.auth-card label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-card .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.auth-switch {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+
+.auth-switch a {
+  color: #d6336c;
+  font-weight: 600;
+}
+
+.error-text {
+  background-color: #fbeaea;
+  color: #c0392b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ---------- General page layout ---------- */
+.page {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.empty-text {
+  color: #888;
+  margin-top: 20px;
+}
+
+.hint-text {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* ---------- Home page ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  color: #d6336c;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.how-it-works h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.step-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.step-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.step-card h3 {
+  margin: 12px 0 6px;
+  color: #d6336c;
+}
+
+.step-card p {
+  color: #777;
+  font-size: 14px;
+  padding: 0 12px;
+}
+
+/* ---------- Wardrobe page ---------- */
+.form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  max-width: 420px;
+}
+
+.form-card label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-card .btn {
+  margin-top: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.clothing-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.clothing-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.clothing-info {
+  padding: 12px;
+}
+
+.clothing-info h4 {
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.clothing-info p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.tag {
+  background-color: #fdeef3;
+  color: #d6336c;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ---------- Create Outfit page ---------- */
+.occasion-form {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+
+.occasion-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.outfit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.outfit-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.outfit-card h3 {
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+.outfit-pieces {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.outfit-piece {
+  width: 140px;
+  text-align: center;
+}
+
+.outfit-piece img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.piece-label {
+  font-size: 12px;
+  color: #d6336c;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.piece-name {
+  font-size: 13px;
+  color: #666;
+}
